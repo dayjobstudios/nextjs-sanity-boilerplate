@@ -1,0 +1,14 @@
+:root {
+  --space-x: 1rem;
+  --space-y: 1.5rem;
+  --wrap-w: 768px;
+  --wrap-w-sm: 640px;
+  --wrap-w-lg: 1280px;
+}
+
+@screen sm {
+  :root {
+    --space-x: 1.5rem;
+    --space-y: 2.5rem;
+  }
+}

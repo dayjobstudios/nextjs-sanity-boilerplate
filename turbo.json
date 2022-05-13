@@ -1,0 +1,40 @@
+{
+  "pipeline": {
+    "generate": {
+      "dependsOn": [
+        "^generate"
+      ],
+      "outputs": [
+        "gen/**"
+      ]
+    },
+    "lint": {
+      "dependsOn": [
+        "^generate",
+        "^lint"
+      ],
+      "outputs": []
+    },
+    "build": {
+      "dependsOn": [
+        "generate",
+        "lint",
+        "^build"
+      ],
+      "outputs": [
+        "dist/**",
+        ".next/**"
+      ]
+    },
+    "deploy": {
+      "dependsOn": [
+        "generate",
+        "build"
+      ],
+      "outputs": []
+    },
+    "dev": {
+      "cache": false
+    }
+  }
+}

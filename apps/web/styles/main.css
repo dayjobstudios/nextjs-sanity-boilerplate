@@ -1,0 +1,11 @@
+/* stylelint-disable no-invalid-position-at-import-rule */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("./reset.css");
+@import url("./globals.css");
+
+@layer utilities {
+  @import url("./rich-text.css");
+}

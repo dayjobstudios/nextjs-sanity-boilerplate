@@ -1,0 +1,15 @@
+{
+  "css.validate": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "editor.formatOnSave": false,
+  "stylelint.enable": true,
+  "[json]": {
+    "editor.formatOnSave": true,
+  },
+  "[html]": {
+    "editor.formatOnSave": true,
+  }
+}
